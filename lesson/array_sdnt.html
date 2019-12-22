@@ -7,10 +7,7 @@
 
     let arrNum = [1, 2, 3, 4];
     let arrStr = [];
-
-    // Код пишем здесь!!!
-    arrStr = arrNum.map(str => str.toString())
-
+    arrStr = arrNum.map(str => str.toString());
     console.log(arrStr);
 
     // 2.Преобразовать массив строк в массив строк с верхним регистром.
@@ -19,11 +16,7 @@
 
     let strings = ['age', 'name', 'table'];
     let newStrings = [];
-
-    // Код пишем здесь!!!
-    newStrings = strings.map(up => up.toUpperCase())
-
-
+    newStrings = strings.map(up => up.toUpperCase());
     console.log(newStrings);
 
     // 3.Преобразовать массив строк в массив, у которого каждый элемент будет начинаться с заглавной буквой.
@@ -32,10 +25,7 @@
 
     let names = ['andrey', 'vasia', 'kirill'];
     let namesCapLetter = [];
-
-    // Код пишем здесь!!!
-    namesCapLetter = names.map(upL => upL.C)
-
+    namesCapLetter = names.map(upL => upL.substring(0, 1).toUpperCase() + upL.substring(1, upL.length));
     console.log(namesCapLetter);
 
     // 4.Преобразовать массив строк в массив объектов:
@@ -43,9 +33,7 @@
 
     let myNames = ['Andrey', 'Vasja', 'Kirill'];
     let persons = [];
-
-    // Код пишем здесь!!!
-
+    persons = myNames.map(name => name = {name});
     console.log(persons);
 
     // 5.Есть массив имен и есть массив возрастов.
@@ -157,15 +145,5 @@
     //15.Дан произвольный массив из чисел. Напишите функцию, которая возвращает максимальное значение из массива. Подумайте, каким ещё способом это мложно сделать?
 
     // Всё сделал? Красавчик! :)))))
-
-
-
-
-
-
-
-
-
-
 
 </script>
