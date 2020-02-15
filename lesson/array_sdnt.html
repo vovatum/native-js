@@ -182,11 +182,18 @@
     //     {age: 23, name: 'Andrey'}
     // ];
     // let oldUsers = [];
-let maxAgeUser = users.reduce((max, user) => max > user.age
-    ? max
-    : user.age,
+
+// let maxAgeUser = users.reduce((max, user) => max > user.age
+//     ? max
+//     : user.age,
+//     0);
+//     console.log(maxAgeUser);
+
+    let maxAgeUser = users.reduce((maxAgeUser, user) => maxAgeUser.age > user.age
+    ? maxAgeUser
+    : user,
     0);
-    console.log(maxAgeUser);
+    console.log(maxAgeUser.name);
 
 
 
