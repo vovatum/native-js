@@ -15,6 +15,7 @@ function blackAndWhite(arr) {
         return "It's a white array"
 }
 
+
 console.log(blackAndWhite(5, 13))
 // "It's a fake array");
 console.log(blackAndWhite([5, 13]))
